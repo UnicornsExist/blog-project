@@ -1,0 +1,96 @@
+body {
+  background-color: #60BABA;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+li #text {
+  padding: 20px;
+}
+
+li #likes {
+  border-top: 5px solid grey;
+  text-align: right;
+  padding: 15px;
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.header {
+  margin-left: 100px;
+  margin-right: 100px;
+
+  border-radius: 10px;
+
+  box-shadow: 1px 3px 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px 60px;
+  grid-template-areas: "p m m m"
+                       "b b b b";
+
+  background-color: white;
+}
+
+
+.image-container {
+  margin: 10px;
+  grid-area: p;
+  background-image: url('https://cdn.dribbble.com/users/1338391/screenshots/4694282/naucnik_dribbble_1x.jpg');
+  background-size: cover;
+}
+
+
+
+.message {
+  margin: 10px;
+  grid-area: m;
+}
+
+.message textarea {
+  font-size: 32px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  resize: none;
+
+  background-color: white;
+  border: 3px solid grey;
+  color: black;
+}
+
+
+.button {
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 10px;
+  grid-area: b;
+  background-color: #12C376;
+}
+
+.button p {
+  color: white;
+  text-align: center;
+}
